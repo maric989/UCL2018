@@ -1,1 +1,1 @@
-hello
+admin.dashboards

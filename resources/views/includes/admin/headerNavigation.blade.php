@@ -25,10 +25,10 @@
                 <a href="#" class="dropdown-item">
                     <i class="fa fa-user"></i> Profile
                 </a>
-
-                <a href="#" class="dropdown-item">
-                    <i class="fa fa-lock"></i> Logout
-                </a>
+                <form action="{{route('logout')}}" id="logout-form" method="POST">@csrf</form>
+                    <a href="#" onclick="document.getElementById('logout-form').submit();" class="dropdown-item">
+                        <i class="fa fa-lock"></i> Logout
+                    </a>
             </div>
         </li>
     </ul>
