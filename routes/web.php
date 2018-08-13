@@ -19,6 +19,7 @@ Route::get('contact', 'PublicController@contact')->name('contact');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('dashboard');
+Route::get('/search','HomeController@search')->name('search');
 
 Route::prefix('user')->group(function (){
    Route::get('dashboard','UserController@dashboard')->name('userDashboard');
